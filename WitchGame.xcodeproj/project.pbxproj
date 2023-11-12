@@ -3,22 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38B70C032AF955D50088438E /* newApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B70C022AF955D50088438E /* newApp.swift */; };
-		38B70C052AF955D50088438E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B70C042AF955D50088438E /* ContentView.swift */; };
+		388837372AFF8DDC00829D25 /* BoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388837362AFF8DDC00829D25 /* BoneView.swift */; };
+		38B70C032AF955D50088438E /* WitchGo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B70C022AF955D50088438E /* WitchGo.swift */; };
+		38B70C052AF955D50088438E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B70C042AF955D50088438E /* GameView.swift */; };
 		38B70C072AF955D70088438E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38B70C062AF955D70088438E /* Assets.xcassets */; };
 		38B70C0A2AF955D70088438E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38B70C092AF955D70088438E /* Preview Assets.xcassets */; };
+		38B70C112AF957430088438E /* WItchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B70C102AF957430088438E /* WItchView.swift */; };
+		38B70C132AF9599B0088438E /* FlamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B70C122AF9599B0088438E /* FlamesView.swift */; };
+		38B70C152AF95DE90088438E /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B70C142AF95DE90088438E /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		388837362AFF8DDC00829D25 /* BoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoneView.swift; sourceTree = "<group>"; };
 		38B70BFF2AF955D50088438E /* new.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = new.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		38B70C022AF955D50088438E /* newApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newApp.swift; sourceTree = "<group>"; };
-		38B70C042AF955D50088438E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		38B70C022AF955D50088438E /* WitchGo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGo.swift; sourceTree = "<group>"; };
+		38B70C042AF955D50088438E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		38B70C062AF955D70088438E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38B70C092AF955D70088438E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		38B70C102AF957430088438E /* WItchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WItchView.swift; sourceTree = "<group>"; };
+		38B70C122AF9599B0088438E /* FlamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamesView.swift; sourceTree = "<group>"; };
+		38B70C142AF95DE90088438E /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +43,7 @@
 		38B70BF62AF955D50088438E = {
 			isa = PBXGroup;
 			children = (
-				38B70C012AF955D50088438E /* new */,
+				38B70C012AF955D50088438E /* WitchGame */,
 				38B70C002AF955D50088438E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,15 +56,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38B70C012AF955D50088438E /* new */ = {
+		38B70C012AF955D50088438E /* WitchGame */ = {
 			isa = PBXGroup;
 			children = (
-				38B70C022AF955D50088438E /* newApp.swift */,
-				38B70C042AF955D50088438E /* ContentView.swift */,
+				38B70C022AF955D50088438E /* WitchGo.swift */,
+				38B70C042AF955D50088438E /* GameView.swift */,
+				38B70C102AF957430088438E /* WItchView.swift */,
+				38B70C122AF9599B0088438E /* FlamesView.swift */,
+				38B70C142AF95DE90088438E /* ResultView.swift */,
+				388837362AFF8DDC00829D25 /* BoneView.swift */,
 				38B70C062AF955D70088438E /* Assets.xcassets */,
 				38B70C082AF955D70088438E /* Preview Content */,
 			);
-			path = new;
+			path = WitchGame;
 			sourceTree = "<group>";
 		};
 		38B70C082AF955D70088438E /* Preview Content */ = {
@@ -95,15 +107,15 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					38B70BFE2AF955D50088438E = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 38B70BFA2AF955D50088438E /* Build configuration list for PBXProject "new" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 38B70BFA2AF955D50088438E /* Build configuration list for PBXProject "WitchGame" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38B70C052AF955D50088438E /* ContentView.swift in Sources */,
-				38B70C032AF955D50088438E /* newApp.swift in Sources */,
+				38B70C132AF9599B0088438E /* FlamesView.swift in Sources */,
+				38B70C112AF957430088438E /* WItchView.swift in Sources */,
+				388837372AFF8DDC00829D25 /* BoneView.swift in Sources */,
+				38B70C152AF95DE90088438E /* ResultView.swift in Sources */,
+				38B70C052AF955D50088438E /* GameView.swift in Sources */,
+				38B70C032AF955D50088438E /* WitchGo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +197,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -241,6 +258,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -267,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"new/Preview Content\"";
+				DEVELOPMENT_TEAM = CUSYF644Y4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -274,6 +293,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,6 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"new/Preview Content\"";
+				DEVELOPMENT_TEAM = CUSYF644Y4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -302,6 +323,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +340,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38B70BFA2AF955D50088438E /* Build configuration list for PBXProject "new" */ = {
+		38B70BFA2AF955D50088438E /* Build configuration list for PBXProject "WitchGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38B70C0B2AF955D70088438E /* Debug */,

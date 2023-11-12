@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct newApp: App {
+struct WitchGo: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameView()
         }
     }
 }
